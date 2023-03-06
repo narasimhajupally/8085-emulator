@@ -1,0 +1,1055 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="tk.Frame" id="mainFrame">
+    <property name="height">200</property>
+    <property name="width">200</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="padx">4</property>
+      <property name="pady">4</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+    </layout>
+    <child>
+      <object class="tk.Frame" id="regFrame">
+        <property name="height">200</property>
+        <property name="highlightbackground">#000000</property>
+        <property name="highlightcolor">#000000</property>
+        <property name="highlightthickness">2</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="columnspan">2</property>
+          <property name="padx">4</property>
+          <property name="pady">4</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+        <child>
+          <object class="tk.Frame" id="flagReg">
+            <property name="height">200</property>
+            <property name="padx">2</property>
+            <property name="width">200</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="padx">10</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="rowspan">2</property>
+            </layout>
+            <child>
+              <object class="tk.Label" id="Label_1">
+                <property name="font">{ } 12 {bold}</property>
+                <property name="text" translatable="yes">flags</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Label" id="Label_2">
+                <property name="text" translatable="yes"> S   :  0</property>
+                <property name="textvariable">string:sFlag</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Label" id="Label_3">
+                <property name="text" translatable="yes"> Z   :  0</property>
+                <property name="textvariable">string:zFlag</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">2</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Label" id="Label_4">
+                <property name="text" translatable="yes"> AC :  0</property>
+                <property name="textvariable">string:acFlag</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">3</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Label" id="Label_5">
+                <property name="text" translatable="yes"> P   :  0</property>
+                <property name="textvariable">string:pFlag</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">4</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Label" id="Label_6">
+                <property name="text" translatable="yes"> CY :  0</property>
+                <property name="textvariable">string:cyFlag</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">5</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Frame" id="allReg">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="padx">8</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+            <child>
+              <object class="tk.Label" id="Label_7">
+                <property name="font">{ } 12 {bold}</property>
+                <property name="text" translatable="yes">Reg    Hex      Bin      Dec</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="padx">8</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Label" id="Label_8">
+                <property name="text" translatable="yes">  A            00       00000000     000</property>
+                <property name="textvariable">string:regA</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Label" id="Label_9">
+                <property name="text" translatable="yes">  B            00       00000000     000</property>
+                <property name="textvariable">string:regB</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">2</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Label" id="Label_10">
+                <property name="text" translatable="yes">  C            00       00000000     000</property>
+                <property name="textvariable">string:regC</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">3</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Label" id="Label_11">
+                <property name="text" translatable="yes">  D            00       00000000     000</property>
+                <property name="textvariable">string:regD</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">4</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Label" id="Label_12">
+                <property name="font">{ } 12 {bold}</property>
+                <property name="text" translatable="yes">Reg    Hex      Bin     Dec</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="padx">8</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Label" id="Label_13">
+                <property name="text" translatable="yes">  E            00       00000000     000</property>
+                <property name="textvariable">string:regE</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="propagate">True</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Label" id="Label_14">
+                <property name="text" translatable="yes">  F            00       00000000     000</property>
+                <property name="textvariable">string:regF</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="propagate">True</property>
+                  <property name="row">2</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Label" id="Label_15">
+                <property name="text" translatable="yes">  H            00       00000000     000</property>
+                <property name="textvariable">string:regH</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="propagate">True</property>
+                  <property name="row">3</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Label" id="Label_16">
+                <property name="text" translatable="yes">  L            00       00000000     000</property>
+                <property name="textvariable">string:regL</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="propagate">True</property>
+                  <property name="row">4</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Frame" id="runFrame">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="padx">8</property>
+              <property name="pady">8</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+            <child>
+              <object class="tk.Label" id="Label_17">
+                <property name="text" translatable="yes">SP : 0xFFFF</property>
+                <property name="textvariable">string:regSP</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="padx">10</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Button" id="Button_1">
+                <property name="activebackground">#ee6c33</property>
+                <property name="command">resetClicked</property>
+                <property name="cursor">hand1</property>
+                <property name="padx">4</property>
+                <property name="pady">1</property>
+                <property name="text" translatable="yes">Reset</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="padx">10</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Label" id="Label_18">
+                <property name="text" translatable="yes">ProgramCounter :</property>
+                <layout>
+                  <property name="column">2</property>
+                  <property name="padx">4</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Entry" id="Entry_1">
+                <property name="justify">center</property>
+                <property name="text" translatable="yes">2000</property>
+                <property name="textvariable">string:pc</property>
+                <property name="width">8</property>
+                <layout>
+                  <property name="column">3</property>
+                  <property name="padx">4</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Button" id="Button_2">
+                <property name="activebackground">#31dc2c</property>
+                <property name="command">runClicked</property>
+                <property name="cursor">hand1</property>
+                <property name="font">{ } 12 {bold}</property>
+                <property name="padx">4</property>
+                <property name="pady">1</property>
+                <property name="text" translatable="yes">Run</property>
+                <layout>
+                  <property name="column">4</property>
+                  <property name="padx">10</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Frame" id="entryFrame">
+        <property name="height">200</property>
+        <property name="highlightbackground">#000000</property>
+        <property name="highlightcolor">#000000</property>
+        <property name="highlightthickness">2</property>
+        <property name="padx">4</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="pady">4</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+        <child>
+          <object class="tk.Button" id="Button_3">
+            <property name="command">prevClicked</property>
+            <property name="height">1</property>
+            <property name="padx">4</property>
+            <property name="pady">2</property>
+            <property name="text" translatable="yes">prev</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="pady">4</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_2">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">2000</property>
+            <property name="textvariable">string:fillAddress</property>
+            <property name="width">6</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="columnspan">2</property>
+              <property name="pady">4</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="Button_4">
+            <property name="command">nextClicked</property>
+            <property name="height">1</property>
+            <property name="padx">4</property>
+            <property name="pady">2</property>
+            <property name="text" translatable="yes">next</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="pady">4</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_19">
+            <property name="text" translatable="yes">2000</property>
+            <property name="textvariable">string:mem1</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_20">
+            <property name="text" translatable="yes">2001</property>
+            <property name="textvariable">string:mem2</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_21">
+            <property name="text" translatable="yes">2002</property>
+            <property name="textvariable">string:mem3</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_22">
+            <property name="text" translatable="yes">2003</property>
+            <property name="textvariable">string:mem4</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">4</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_23">
+            <property name="text" translatable="yes">2004</property>
+            <property name="textvariable">string:mem5</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">5</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_24">
+            <property name="text" translatable="yes">2005</property>
+            <property name="textvariable">string:mem6</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">6</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_25">
+            <property name="text" translatable="yes">2006</property>
+            <property name="textvariable">string:mem7</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">7</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_26">
+            <property name="text" translatable="yes">2007</property>
+            <property name="textvariable">string:mem8</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">8</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_27">
+            <property name="text" translatable="yes">2008</property>
+            <property name="textvariable">string:mem9</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">9</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_28">
+            <property name="text" translatable="yes">2009</property>
+            <property name="textvariable">string:mem10</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">10</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_3">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">00</property>
+            <property name="textvariable">string:val1</property>
+            <property name="width">4</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="pady">2</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_4">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">00</property>
+            <property name="textvariable">string:val2</property>
+            <property name="width">4</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="pady">2</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_5">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">00</property>
+            <property name="textvariable">string:val3</property>
+            <property name="width">4</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="pady">2</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_6">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">00</property>
+            <property name="textvariable">string:val4</property>
+            <property name="width">4</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="pady">2</property>
+              <property name="propagate">True</property>
+              <property name="row">4</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_7">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">00</property>
+            <property name="textvariable">string:val5</property>
+            <property name="width">4</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="pady">2</property>
+              <property name="propagate">True</property>
+              <property name="row">5</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_8">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">00</property>
+            <property name="textvariable">string:val6</property>
+            <property name="width">4</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="pady">2</property>
+              <property name="propagate">True</property>
+              <property name="row">6</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_9">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">00</property>
+            <property name="textvariable">string:val7</property>
+            <property name="width">4</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="pady">2</property>
+              <property name="propagate">True</property>
+              <property name="row">7</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_10">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">00</property>
+            <property name="textvariable">string:val8</property>
+            <property name="width">4</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="pady">2</property>
+              <property name="propagate">True</property>
+              <property name="row">8</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_11">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">00</property>
+            <property name="textvariable">string:val9</property>
+            <property name="width">4</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="pady">2</property>
+              <property name="propagate">True</property>
+              <property name="row">9</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_12">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">00</property>
+            <property name="textvariable">string:val10</property>
+            <property name="width">4</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="pady">2</property>
+              <property name="propagate">True</property>
+              <property name="row">10</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_29">
+            <property name="text" translatable="yes">200A</property>
+            <property name="textvariable">string:mem11</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="padx">2</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_30">
+            <property name="text" translatable="yes">200B</property>
+            <property name="textvariable">string:mem12</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="padx">2</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_31">
+            <property name="text" translatable="yes">200C</property>
+            <property name="textvariable">string:mem13</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="padx">2</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_32">
+            <property name="text" translatable="yes">200D</property>
+            <property name="textvariable">string:mem14</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="padx">2</property>
+              <property name="propagate">True</property>
+              <property name="row">4</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_33">
+            <property name="text" translatable="yes">200E</property>
+            <property name="textvariable">string:mem15</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="padx">2</property>
+              <property name="propagate">True</property>
+              <property name="row">5</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_34">
+            <property name="text" translatable="yes">200F</property>
+            <property name="textvariable">string:mem16</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="padx">2</property>
+              <property name="propagate">True</property>
+              <property name="row">6</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_35">
+            <property name="text" translatable="yes">2010</property>
+            <property name="textvariable">string:mem17</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="padx">2</property>
+              <property name="propagate">True</property>
+              <property name="row">7</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_36">
+            <property name="text" translatable="yes">2011</property>
+            <property name="textvariable">string:mem18</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="padx">2</property>
+              <property name="propagate">True</property>
+              <property name="row">8</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_37">
+            <property name="text" translatable="yes">2012</property>
+            <property name="textvariable">string:mem19</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="padx">2</property>
+              <property name="propagate">True</property>
+              <property name="row">9</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_38">
+            <property name="text" translatable="yes">2013</property>
+            <property name="textvariable">string:mem20</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="padx">2</property>
+              <property name="propagate">True</property>
+              <property name="row">10</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_13">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">00</property>
+            <property name="textvariable">string:val11</property>
+            <property name="width">4</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_14">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">00</property>
+            <property name="textvariable">string:val12</property>
+            <property name="width">4</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_15">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">00</property>
+            <property name="textvariable">string:val13</property>
+            <property name="width">4</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_16">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">00</property>
+            <property name="textvariable">string:val14</property>
+            <property name="width">4</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="propagate">True</property>
+              <property name="row">4</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_17">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">00</property>
+            <property name="textvariable">string:val15</property>
+            <property name="width">4</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="propagate">True</property>
+              <property name="row">5</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_18">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">00</property>
+            <property name="textvariable">string:val16</property>
+            <property name="width">4</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="propagate">True</property>
+              <property name="row">6</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_19">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">00</property>
+            <property name="textvariable">string:val17</property>
+            <property name="width">4</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="propagate">True</property>
+              <property name="row">7</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_20">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">00</property>
+            <property name="textvariable">string:val18</property>
+            <property name="width">4</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="propagate">True</property>
+              <property name="row">8</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_21">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">00</property>
+            <property name="textvariable">string:val19</property>
+            <property name="width">4</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="propagate">True</property>
+              <property name="row">9</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_22">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">00</property>
+            <property name="textvariable">string:val20</property>
+            <property name="width">4</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="propagate">True</property>
+              <property name="row">10</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="Button_5">
+            <property name="command">fillClicked</property>
+            <property name="cursor">hand1</property>
+            <property name="font">{ } 12 {bold}</property>
+            <property name="height">1</property>
+            <property name="padx">2</property>
+            <property name="pady">2</property>
+            <property name="text" translatable="yes">fill</property>
+            <property name="width">4</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="columnspan">4</property>
+              <property name="pady">4</property>
+              <property name="propagate">True</property>
+              <property name="row">11</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Frame" id="codeFrame">
+        <property name="cursor">arrow</property>
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+        <child>
+          <object class="tk.Text" id="Text_1">
+            <property name="blockcursor">true</property>
+            <property name="borderwidth">2</property>
+            <property name="font">{10} 10 {bold}</property>
+            <property name="height">20</property>
+            <property name="padx">5</property>
+            <property name="pady">5</property>
+            <property name="width">20</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="padx">10</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="rowspan">5</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_39">
+            <property name="text" translatable="yes">LoadAddr</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_23">
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">2000</property>
+            <property name="textvariable">string:loadAddr</property>
+            <property name="width">6</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="Button_6">
+            <property name="command">loadClicked</property>
+            <property name="padx">4</property>
+            <property name="pady">2</property>
+            <property name="text" translatable="yes">load</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="pady">2</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Label_40">
+            <property name="text" translatable="yes">FileName</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="Entry_24">
+            <property name="justify">center</property>
+            <property name="textvariable">string:fileName</property>
+            <property name="width">6</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="Button_8">
+            <property name="command">saveClicked</property>
+            <property name="padx">2</property>
+            <property name="pady">1</property>
+            <property name="text" translatable="yes">Save</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="pady">2</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="Button_9">
+            <property name="command">loadfileClicked</property>
+            <property name="padx">2</property>
+            <property name="pady">1</property>
+            <property name="text" translatable="yes">loadfile</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="columnspan">2</property>
+              <property name="pady">2</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="Button_7">
+            <property name="command">clearClicked</property>
+            <property name="padx">4</property>
+            <property name="pady">1</property>
+            <property name="text" translatable="yes">clear</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Text" id="Text_2">
+            <property name="background">#d9d9d9</property>
+            <property name="height">15</property>
+            <property name="padx">5</property>
+            <property name="pady">5</property>
+            <property name="state">disabled</property>
+            <property name="text" translatable="yes">Syntax Info
+--&gt;only 'mov' has comma in it, for rest use space.
+--&gt;example
+1)single word : hlt ,ret
+2)1byte reg : sbi 05 ,rst 5,push b ,inx b
+3)mov b,c &amp; mvi a 55 substitute registers
+4) 3 byte : jnz 2050 , lxi d 40ff ,,,,,,  cnz 2050</property>
+            <property name="width">20</property>
+            <property name="wrap">word</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="columnspan">3</property>
+              <property name="pady">5</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+              <property name="rowspan">3</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
